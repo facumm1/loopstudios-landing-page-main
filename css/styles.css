@@ -24,6 +24,7 @@
 
 body{
     font-size: 15px;
+    overflow-x: hidden;
 }
 
 /* Diseño desktop 1440px */
@@ -61,7 +62,11 @@ header{
 }
 
 .navbar-nav li{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none; 
+    position: relative;
 }
 
 .navbar-nav a{
@@ -70,6 +75,20 @@ header{
     font-size: 16px;
     font-weight: 800;
     padding: 0 17px;
+}
+
+.navbar-nav li::after{
+    background-color: #fff;
+    bottom: -10px;
+    content: '';
+    height: 2px;
+    left: 50%;
+    width: 0;
+}
+
+.navbar-nav li:hover::after{
+    transition-duration: .5s;
+    width: 35px;
 }
 
 /* Banner IMMERSIVE EXP... */
@@ -91,3 +110,46 @@ header{
 }
 
 /* --- End of header --- */
+
+/* --- Main --- */
+
+/* First screen  */
+
+.content-1{
+    display: flex;
+    font-family: 'Josefin Sans', 'sans-serif';
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+}
+
+.main-image{
+    padding: 8% 0 8% 10rem;
+}
+
+.main-text{
+    background-color: #fff;
+    display: block;
+    height: fit-content;
+    padding: 5rem 4rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-0%);
+    width: 50%;
+}
+
+.main-text h1{
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 100;
+}
+
+.main-text p{
+    font-size: 20px;    
+    text-align: left;
+}
+
+/* Second screen */
+
+/* --- End of main --- */
