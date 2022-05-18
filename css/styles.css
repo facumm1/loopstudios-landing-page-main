@@ -34,14 +34,14 @@ body{
 header{
     background-image:url('/images/desktop/image-hero.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size: 100%;
+    background-position: center top;
     background-attachment: fixed;
     color:hsl(0, 0%, 100%);  /* Temporal */
     display: flex;
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     overflow: hidden;
 }
@@ -79,10 +79,8 @@ header{
 
 .navbar-nav li::after{
     background-color: #fff;
-    bottom: -10px;
     content: '';
     height: 2px;
-    left: 50%;
     width: 0;
 }
 
@@ -124,29 +122,32 @@ header{
 }
 
 .f-img{
-    padding: 8% 0 8% 10rem;
+    margin: auto 170px;
 }
 
 .f-txt{
     background-color: var(--white);
     display: block;
-    height: fit-content;
-    padding: 5rem 4rem;
+    padding: 93px 94px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translateX(-0%);
+    top: 41%;
+    transform: translateX(2%);
     width: 50%;
 }
 
 .f-txt h1{
-    text-transform: uppercase;
-    font-size: 3.5em;
+    font-size: 48px;
     font-weight: 100;
+    text-transform: uppercase;
 }
 
 .f-txt p{
-    font-size: 20px;    
+    font-size: 15px;
+    font-family: 'Alata', sans-serif;  
+    line-height: 24.5px;
+    margin-right: 90px;
+    margin-top: 25px;
     text-align: left;
 }
 
@@ -155,8 +156,7 @@ header{
 .second-content{
     display: flex; 
     flex-direction: column;
-    /* height: 100vh;
-    width: 100vw; */
+    margin-bottom: 165px;
 }
 
 /* Header*/
@@ -270,3 +270,84 @@ header{
 }
 
 /* --- End of main --- */
+
+/* --- Footer --- */
+
+footer{
+    background-color: #000;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+/* - Footer logo + social media -  */
+.footer-logo-media{
+    display: flex;
+    justify-content: space-between;
+    margin: 43px 165px 21px 165px;
+}
+
+/* Logo */
+.footer-logo-media .footer-logo{
+    width: 143px;
+    height: 100%;
+}
+
+/* Media */ 
+
+.footer-media img{
+    padding-left: 12px;
+}
+
+/* - Footer navbar y copyright - */
+
+.footer-nav-rights{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 165px 43px 165px;
+}
+
+/* Nav */
+.footer-nav{
+    display: flex;
+}
+
+.footer-nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.footer-nav ul li{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Alata', sans-serif;
+    position: relative;
+}
+
+.footer-nav li a{
+    color: var(--white);
+    text-decoration: none;
+    padding-right: 33px;
+}
+
+.footer-nav li::after{  
+    background-color: #fff;
+    content: '';
+    height: 2px;
+    width: 0;
+}
+
+.footer-nav li:hover::after{
+    transition-duration: .5s;
+    width: 15px;
+}
+
+/* Copyright */
+
+.footer-rights p{
+    color: var(--very-dark-gray);
+    font-family: 'Alata', sans-serif;
+    font-size: 15px;
+}
+
+/* --- End of footer --- */
