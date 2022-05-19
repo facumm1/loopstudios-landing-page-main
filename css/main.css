@@ -1,35 +1,3 @@
-/* Global */
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-/* Raiz */
-
-:root{
-    /* Colors */
-
-    --white: hsl(0, 0%, 100%);
-    --black: hsl(0, 0%, 0%);
-    --dark-gray: hsl(0, 0%, 55%);
-    --very-dark-gray: hsl(0, 0%, 41%);
-
-    /* Fonts */
-
-    /* 
-       'Alata', sans-serif;
-       'Josefin Sans', sans-serif; 
-    */
-}
-
-body{
-    color: var(--white);
-    font-size: 15px;
-    overflow-x: hidden;
-}
-
 /* Diseño desktop 1440px */
 
 /* --- Header --- */
@@ -41,23 +9,32 @@ header{
     background-position: center top;
     background-attachment: fixed;
     color:hsl(0, 0%, 100%);  /* Temporal */
-    display: flex;
+    display: flex;  
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif;
-    height: 90vh;
+    height: 70vh;
     width: 100vw;
 }
 
 /* Logo LOOPSTUDIOS */
 
+.header-banner-m{
+    display: none;
+}
+
 .header-navbar{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 64px 165px;
+    margin: 64px 165px 0px 165px;   
 }
 
 /* Navbar: ABOUT, CAREERS, ETC */
+
+.mobile-nav, .nav-toggler{
+    display: none;
+}
+
 
 .navbar-nav ul{
     display: flex;
@@ -94,7 +71,8 @@ header{
 /* Banner IMMERSIVE EXP... */
 
 .header-banner{
-    margin: 61px auto auto 163px;
+    /* margin: 100px auto auto 163px; */
+    margin: 100px 163px;
     width: 46%;
 }
 
@@ -104,7 +82,7 @@ header{
     font-weight: 300;
     letter-spacing: 1px;
     line-height: 71px;
-    padding: 37px 101px 26px 40px;
+    padding: 5.5% 15% 4% 6%;
     text-transform: uppercase;
     width: 585px;
 }

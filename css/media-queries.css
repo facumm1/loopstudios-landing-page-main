@@ -1,0 +1,129 @@
+/* Diseño responsive: 375px */
+
+@media screen and (max-width: 768px) {
+  /* --- Header --- */
+
+  header {
+    background-image: url("/images/mobile/image-hero.jpg");
+    background-size: 100%;
+    background-position: center top;
+    background-attachment: fixed;
+    color: hsl(0, 0%, 100%); /* Temporal */
+    display: flex;
+    flex-direction: column;
+    font-family: "Josefin Sans", sans-serif;
+    height: 90vh;
+    width: 100vw;
+  }
+
+  /* Logo LOOPSTUDIOS */
+
+  .header-navbar {  
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 45px 20px;
+  }
+
+  .navbar-logo img{
+    width: 153px; /* o 80% en 385px */
+  }
+
+  .nav-toggler{
+    display: block;
+
+  }
+
+  /* Navbar: ABOUT, CAREERS, ETC */
+
+  .navbar-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav li {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: relative;
+/*     padding: 32px; */
+  }
+
+  .navbar-nav a {
+    color: hsl(0, 0%, 100%);
+    font-size: 26px;
+    font-weight: 100;
+    padding: 17px 30px;
+    text-decoration: none;
+    text-align: left;
+  }
+
+  .navbar-nav li::after {
+    background-color: #fff;
+    content: "";
+    height: 2px;
+    width: 0;
+  }
+
+  .navbar-nav li:hover::after {
+    transition-duration: 0.5s;
+    width: 35px;
+  }
+
+  .navbar-nav{
+    position: fixed;
+    top: 0;
+    left: -150%;
+    width: 100%;
+    height: 100vh;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    transition: .25s;
+  }
+
+  .mobile-nav{
+    display: flex;
+    position: absolute;
+    right: 25px;
+    left: 25px;
+    top: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Banner IMMERSIVE EXP... */
+  .header-banner{
+      display: none;
+  }
+
+  .header-banner-m {
+    display: block;
+    margin: 110px auto 0 auto;
+    padding: 0;
+    width: 90%;
+  }
+
+  .header-banner-m h1 {
+    border: 2px solid #fff;
+    font-size: 42px;
+    font-weight: 300;
+    line-height: 40.5px;
+    padding: 22px 25px;
+    text-transform: uppercase;
+    width: auto;   
+  }
+
+  /* --- End of header --- */
+
+  main{
+      display: none;
+  }
+
+  footer{
+      display: none;
+  }
+}
