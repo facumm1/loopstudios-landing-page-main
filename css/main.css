@@ -18,10 +18,6 @@ header{
 
 /* Logo LOOPSTUDIOS */
 
-.header-banner-m{
-    display: none;
-}
-
 .header-navbar{
     align-items: center;
     display: flex;
@@ -69,6 +65,9 @@ header{
 }
 
 /* Banner IMMERSIVE EXP... */
+.header-banner-m{
+    display: none;
+}
 
 .header-banner{
     /* margin: 100px auto auto 163px; */

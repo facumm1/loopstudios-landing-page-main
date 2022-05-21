@@ -5,75 +5,40 @@
 
   header {
     background-image: url("/images/mobile/image-hero.jpg");
-    background-size: 100%;
-    background-position: center top;
-    background-attachment: fixed;
-    color: hsl(0, 0%, 100%); /* Temporal */
-    display: flex;
-    flex-direction: column;
-    font-family: "Josefin Sans", sans-serif;
     height: 90vh;
-    width: 100vw;
+    /* display: none; */
   }
 
   /* Logo LOOPSTUDIOS */
 
-  .header-navbar {  
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+  .header-navbar {
     margin: 45px 20px;
   }
 
-  .navbar-logo img{
+  .navbar-logo img {
     width: 153px; /* o 80% en 385px */
   }
 
-  .nav-toggler{
+  .nav-toggler {
     display: block;
-
   }
 
   /* Navbar: ABOUT, CAREERS, ETC */
 
   .navbar-nav ul {
-    display: flex;
     flex-direction: column;
     align-items: flex-start;
     text-transform: uppercase;
   }
 
-  .navbar-nav li {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    position: relative;
-/*     padding: 32px; */
-  }
-
   .navbar-nav a {
-    color: hsl(0, 0%, 100%);
     font-size: 26px;
     font-weight: 100;
     padding: 17px 30px;
-    text-decoration: none;
     text-align: left;
   }
 
-  .navbar-nav li::after {
-    background-color: #fff;
-    content: "";
-    height: 2px;
-    width: 0;
-  }
-
-  .navbar-nav li:hover::after {
-    transition-duration: 0.5s;
-    width: 35px;
-  }
-
-  .navbar-nav{
+  .navbar-nav {
     position: fixed;
     top: 0;
     left: -150%;
@@ -82,10 +47,10 @@
     background: var(--black);
     display: flex;
     align-items: center;
-    transition: .25s;
+    transition: 0.25s;
   }
 
-  .mobile-nav{
+  .mobile-nav {
     display: flex;
     position: absolute;
     right: 25px;
@@ -96,8 +61,8 @@
   }
 
   /* Banner IMMERSIVE EXP... */
-  .header-banner{
-      display: none;
+  .header-banner {
+    display: none;
   }
 
   .header-banner-m {
@@ -114,16 +79,72 @@
     line-height: 40.5px;
     padding: 22px 25px;
     text-transform: uppercase;
-    width: auto;   
+    width: auto;
   }
 
   /* --- End of header --- */
 
-  main{
-      display: none;
+  /* --- Main --- */
+
+  .first-content {
+    justify-content: center;
+    height: 720px;
+    margin: 0;
+    width: 100%;
   }
 
-  footer{
-      display: none;
+  .f-content-box {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    max-width: none;
+    width: auto;
+  }
+
+  .f-img {
+    margin: 0;
+    text-align: center;
+    width: 87.5%;
+  }
+
+  .f-img img{
+    width: 100%;
+  }
+
+  .f-txt {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    padding: 0;
+    position: static;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .f-txt h1 {
+    font-size: 35px;
+    font-weight: 500;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .f-txt p {
+    color: var(--dark-gray);
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 15px;
+    padding: 0 45px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .second-content {
+    display: none;
+  }
+
+  footer {
+    display: none;
   }
 }
