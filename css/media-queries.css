@@ -91,6 +91,7 @@
     height: 720px;
     margin: 0;
     width: 100%;
+    /* display: none; */
   }
 
   .f-content-box {
@@ -108,7 +109,7 @@
     width: 87.5%;
   }
 
-  .f-img img{
+  .f-img img {
     width: 100%;
   }
 
@@ -140,9 +141,78 @@
     width: fit-content;
   }
 
+  /* - Second screen - */
+
   .second-content {
-    display: none;
+    margin: 0;
+    position: relative;
   }
+
+  /* Header*/
+
+  .s-header {
+    align-self: none;
+    justify-content: center;
+    margin: 0 0 36px 0;
+  }
+
+  .s-header h1 {
+    font-size: 34px;
+    margin-top: 32px;
+  }
+
+  .s-header button {
+    border: 1px solid #000;
+    bottom: 6%;
+    color: var(--dark-gray);
+    left: 50%;
+    padding: 10px 42px;
+    position: absolute;
+    transform: translateX(-50%);
+  }
+
+  /* Main */
+
+  .s-main {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    margin: 0 0 164px 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  /* Cards */
+
+  .card {
+    flex: 0;
+    margin: 12px auto;
+    width: 90%;
+    height: 100%;
+  }
+
+  .card img{
+    height: 135px;
+    object-fit: cover;
+    object-position: 0px 10px;
+    width: 100%;
+  }
+
+  .card:after {
+    height: 135px;
+    width: 100%;
+  }
+
+  .card h1 {
+    font-size: 24px;
+    left: 20px;
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+  }
+
+  /* --- End of main --- */
 
   footer {
     display: none;
