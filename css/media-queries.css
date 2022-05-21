@@ -6,7 +6,6 @@
   header {
     background-image: url("/images/mobile/image-hero.jpg");
     height: 90vh;
-    /* display: none; */
   }
 
   /* Logo LOOPSTUDIOS */
@@ -192,7 +191,7 @@
     height: 100%;
   }
 
-  .card img{
+  .card img {
     height: 135px;
     object-fit: cover;
     object-position: 0px 10px;
@@ -214,7 +213,57 @@
 
   /* --- End of main --- */
 
+  /* --- Footer --- */
+
   footer {
-    display: none;
+    flex-direction: column;
   }
+
+  /* - Footer logo + nav -  */
+  .footer-logo-nav {
+    align-items: center;
+    margin: 60px 0 16px 0;
+  }
+
+  /* Logo */
+  .footer-logo-nav .footer-logo {
+    height: 100%;
+    margin: 0;
+    width: 150px;
+  }
+
+  /* Nav */
+  .footer-nav {
+    margin: 24px 0 26px 0;
+  }
+
+  .footer-nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-nav li a {
+    padding: 10px 0;
+  }
+
+  /* - Footer navbar y copyright - */
+
+  .footer-media-right {
+    align-items: center;
+    margin: 0 0 64px 0;
+  }
+
+  /* Media */
+
+  .footer-media img {
+    padding: 0 6px;
+  }
+
+  /* Copyright */
+
+  .footer-right {
+    margin-top: 16px;
+  }
+
+  /* --- End of footer --- */
 }

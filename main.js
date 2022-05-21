@@ -13,5 +13,5 @@ navToggler.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     headerNavbar.style.left = -150 + '%';
     main.style.display = 'block';
-    /* footer.style.display = 'block'; */
+    footer.style.display = 'flex';
 });

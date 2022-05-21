@@ -8,7 +8,7 @@ header{
     background-size: 100%;
     background-position: center top;
     background-attachment: fixed;
-    color:hsl(0, 0%, 100%);  /* Temporal */
+    color:hsl(0, 0%, 100%);
     display: flex;  
     flex-direction: column;
     font-family: 'Josefin Sans', sans-serif;
@@ -70,7 +70,6 @@ header{
 }
 
 .header-banner{
-    /* margin: 100px auto auto 163px; */
     margin: 100px 163px;
     width: 46%;
 }
@@ -123,9 +122,6 @@ header{
     position: absolute;
     top: 200px;
     width: 550px;
-
-    /* padding: 93px 94px; */
-    /* transform: translateX(2%); */
 }
 
 .f-txt h1{
@@ -245,39 +241,26 @@ footer{
     background-color: #000;
     color: var(--white);
     display: flex;
-    flex-direction: column; 
+    justify-content: space-between;
 }
 
-/* - Footer logo + social media -  */
-.footer-logo-media{
+/* - Footer logo + nav -  */
+.footer-logo-nav{
     display: flex;
-    justify-content: space-between;
-    margin: 43px 165px 21px 165px;
+    flex-direction: column;
+    margin: 43px 0 48px 165px;
 }
 
 /* Logo */
-.footer-logo-media .footer-logo{
-    height: 100%;
-    width: 143px;
-}
-
-/* Media */ 
-
-.footer-media img{
-    padding-left: 12px;
-}
-
-/* - Footer navbar y copyright - */
-
-.footer-nav-rights{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 165px 43px 165px;
+.footer-logo-nav .footer-logo{
+    height: 35%;
+    width: 142px;
 }
 
 /* Nav */
 .footer-nav{
     display: flex;
+    margin-top: 25px;
 }
 
 .footer-nav ul{
@@ -310,9 +293,29 @@ footer{
     width: 15px;
 }
 
+
+/* - Footer navbar y copyright - */
+
+.footer-media-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 43px 165px 21px 21px;
+}
+
+/* Media */ 
+
+.footer-media img{
+    padding-left: 12px;
+}
+
 /* Copyright */
 
-.footer-rights p{
+.footer-right{
+    margin-top: 21px;
+}
+
+.footer-right p{
     color: var(--very-dark-gray);
     font-family: 'Alata', sans-serif;
     font-size: 15px;

@@ -27,5 +27,5 @@
 body{
     color: var(--white);
     font-size: 15px;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
