@@ -1,0 +1,147 @@
+/* --- Main --- */
+
+main {
+  /* - First screen - */
+  .first-content {
+    align-items: center;
+    color: $black;
+    display: flex;
+    font-family: "Josefin Sans", "sans-serif";
+    height: 100vh;
+    margin: 0 auto;
+    width: 100vw;
+
+    .f-content-box {
+      display: block;
+      margin: 0 auto;
+      max-width: 1086px;
+      position: relative;
+      width: 75.5%;
+
+      .f-img {
+        margin: auto 120px auto 0;
+        width: fit-content;
+      }
+
+      .f-txt {
+        background-color: $white;
+        display: block;
+        left: 50%;
+        padding: 60px 15px 30px 60px;
+        position: absolute;
+        top: 200px;
+        width: 550px;
+
+        h1 {
+          font-size: 48px;
+          font-weight: 100;
+          text-transform: uppercase;
+        }
+
+        p {
+          font-size: 15px;
+          font-family: "Alata", sans-serif;
+          line-height: 24.5px;
+          margin-top: 25px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  /* - Second screen - */
+  .second-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 165px;
+
+    /* Header*/
+
+    .s-header {
+      align-self: stretch;
+      display: flex;
+      font-family: "Josefin Sans", sans-serif;
+      justify-content: space-between;
+      margin: 16px 160px 56px 160px;
+
+      h1 {
+        color: $black;
+        font-size: 47.5px;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+
+      button {
+        background-color: transparent;
+        border: 2px solid #000;
+        font-family: "Alata", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        height: fit-content;
+        letter-spacing: 4.5px;
+        padding: 8px 36.5px;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: $black;
+          color: $white;
+          cursor: pointer;
+          transition-duration: 0.75s;
+        }
+      }
+    }
+
+    /* Main */
+
+    .s-main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 100%;
+      margin: 0 auto;
+      max-width: 1232px;
+      width: 90%;
+
+      /* Cards */
+
+      .card {
+        flex: 1 0 256px;
+        font-family: "Josefin Sans", sans-serif;
+        margin: 16px;
+        position: relative;
+
+        &:after {
+          background-image: linear-gradient(180deg, transparent 30%, #000b);
+          content: "";
+          inset: 0;
+          height: 450px;
+          position: absolute;
+          width: 256px;
+        }
+
+        &:hover::after {
+          background-image: linear-gradient(180deg, #fffa 40%, #555a);
+        }
+
+        h1 {
+          font-size: 32px;
+          font-weight: 100;
+          left: 15%;
+          position: absolute;
+          top: 78%;
+          z-index: 1;
+        }
+
+        &:hover h1 {
+          color: $black;
+          font-weight: 800;
+          transition-duration: 0.5s;
+          z-index: 1;
+        }
+      }
+    }
+  }
+}
+
+/* --- End of main --- */

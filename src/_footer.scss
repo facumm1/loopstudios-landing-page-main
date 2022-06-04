@@ -1,0 +1,88 @@
+/* $- Footer $- */
+
+footer {
+  background-color: #000;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+
+  /* - Footer logo + nav -  */
+
+  .footer-logo-nav {
+    display: flex;
+    flex-direction: column;
+    margin: 43px 0 48px 165px;
+
+    /* Logo */
+    .footer-logo {
+      height: 35%;
+      width: 142px;
+    }
+
+    /* Nav */
+    .footer-nav {
+      display: flex;
+      margin-top: 25px;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          font-family: "Alata", sans-serif;
+          position: relative;
+
+          a {
+            color: $white;
+            padding-right: 33px;
+            text-decoration: none;
+          }
+
+          &::after {
+            background-color: #fff;
+            content: "";
+            height: 2px;
+            width: 0;
+          }
+
+          &:hover::after {
+            transition-duration: 0.5s;
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  /* - Footer navbar y copyright - */
+
+  .footer-media-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 43px 165px 21px 21px;
+
+    /* Media */
+
+    .footer-media {
+      img {
+        padding-left: 12px;
+      }
+    }
+
+    /* Copyright */
+    .footer-right {
+      margin-top: 21px;
+
+      p {
+        color: $very-dark-gray;
+        font-family: "Alata", sans-serif;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+/* $- End of footer $- */
